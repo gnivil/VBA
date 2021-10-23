@@ -1,25 +1,26 @@
-# VBA-challenge
+# VBA Challenge - The VBA of Wall Street
+Analyze real stock market data.
 
-This code creates a summary table which breaks down the following for each stock...
+-----
 
-    Ticker Symbol
-        Displayed by pulling the symbol from Column A using a for loop
-    
-    Yearly Change
-        Calculated by using a nested conditional formula within our for loop, comparing the value of the stock at the beginning of the year vs. the value of the stock at the end of the year
+# Stock Market Analysis
+Created a VBA script that loops through all the stocks for one year and outputs the following information:
+    * Ticket symbol
+    * Yearly change from opening price to closing price of that year
+    * Percent change from opening price to closing price of that year
+    * Total stock volume of the stock
+    * Conditional formatting highlighting positive change in green and negative change in red
+# Bonus
+The bonus solution returns the stock with the "Greatest % increase", "Greatest % decrease" and "Greatest total volume". Adjustments made so the VBA script runs on every worksheet.
 
-    Yerly Percent Change
-        Calculated by dividing the calculated Yearly Change by the original value of the stock at the beginning of the year
+## 2014
 
-    Total Stock Volume
-        Calculated by creating a running total of the volume for each ticker
+![alt text](https://github.com/gnivil/VBA-Challenge/blob/c5c1af9359fc70ca6d4fdaa491d59b644e0d879f/Yearly%20Stock%20Images/2014%20Stock%20Data_VBA%20Challenge.png)
 
+## 2015
+![alt text](https://github.com/gnivil/VBA-Challenge/blob/c5c1af9359fc70ca6d4fdaa491d59b644e0d879f/Yearly%20Stock%20Images/2015%20Stock%20Data_VBA%20Challenge.png)
+## 2016
 
-Conflicts
-    My code has bugs in the for loop that I could not correct. Some possible culprits I investigated were...
+![alt text](https://github.com/gnivil/VBA-Challenge/blob/c5c1af9359fc70ca6d4fdaa491d59b644e0d879f/Yearly%20Stock%20Images/2016%20Stock%20Data_VBA%20Challenge.png)
 
-    The value that closes out my for loop is 'Cells (i,1).End(xlDown)
-    My variables may be incorrectly labeled
-    The order of my conditionals within my for loop may be incorrect
-    The for loop for cycling through each worksheet is not properly labeled
-
+-----
